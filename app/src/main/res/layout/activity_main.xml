@@ -15,7 +15,7 @@
         android:padding="10sp"
         android:textSize="54sp"
         android:gravity="end|bottom"
-        android:text="12 ka 4, 4 2 ka 1"
+        android:text="1 2 ka 4, 4 2 ka 1"
         />
 
     <LinearLayout
@@ -28,11 +28,11 @@
         <Button
 
             android:id="@+id/btn7"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="7"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
 
 
@@ -41,33 +41,33 @@
         <Button
 
             android:id="@+id/btn8"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="8"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
             />
 
         <Button
 
             android:id="@+id/btn9"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="9"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
             />
 
         <Button
 
             android:id="@+id/btn_divide"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="/"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
             />
 
@@ -85,11 +85,11 @@
         <Button
 
             android:id="@+id/btn4"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="4"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
 
             />
@@ -97,11 +97,11 @@
         <Button
 
             android:id="@+id/btn5"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="5"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
 
             />
@@ -109,22 +109,22 @@
         <Button
 
             android:id="@+id/btn6"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="6"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
             />
 
         <Button
 
             android:id="@+id/btn_multiply"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="*"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
 
             />
@@ -141,11 +141,11 @@
         <Button
 
             android:id="@+id/btn1"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="1"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_digit"
 
@@ -154,22 +154,22 @@
         <Button
 
             android:id="@+id/btn2"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="2"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
             />
 
         <Button
 
             android:id="@+id/btn3"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="3"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
 
             />
@@ -180,11 +180,11 @@
         <Button
 
             android:id="@+id/btn_minus"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="-"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
             />
 
@@ -201,11 +201,11 @@
         <Button
 
             android:id="@+id/btn0"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:text="0"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
 
             />
@@ -214,22 +214,22 @@
         <Button
 
             android:id="@+id/btn_decimal"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="."
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
             />
 
         <Button
 
             android:id="@+id/btn_plus"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="+"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="30sp"
             />
 
@@ -246,11 +246,11 @@
         <Button
 
             android:id="@+id/btn_equals"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="="
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
 
             />
@@ -259,12 +259,14 @@
         <Button
 
             android:id="@+id/btn_clear"
-            android:layout_width="0dp"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="CLR"
-            android:layout_margin="2dp"
+            android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_clear"
+
             />
 
 
