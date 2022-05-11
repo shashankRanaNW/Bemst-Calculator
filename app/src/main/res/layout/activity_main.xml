@@ -48,6 +48,7 @@
             android:text="8"
             android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_digit"
             />
 
         <Button
@@ -70,6 +71,8 @@
             android:text="/"
             android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_operator"
+
             />
 
 
@@ -92,6 +95,7 @@
             android:text="4"
             android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_digit"
 
             />
 
@@ -104,6 +108,7 @@
             android:text="5"
             android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_digit"
 
             />
 
@@ -116,6 +121,7 @@
             android:text="6"
             android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_digit"
             />
 
         <Button
@@ -127,6 +133,7 @@
             android:text="*"
             android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_operator"
 
             />
 
@@ -161,6 +168,7 @@
             android:text="2"
             android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_digit"
             />
 
         <Button
@@ -172,11 +180,9 @@
             android:text="3"
             android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_digit"
 
             />
-            /*android:onClick="on_digit"
-        *?
-
 
         <Button
 
@@ -187,6 +193,8 @@
             android:text="-"
             android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_operator"
+
             />
 
 
@@ -208,6 +216,7 @@
             android:text="0"
             android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_digit"
 
             />
 
@@ -232,6 +241,7 @@
             android:text="+"
             android:layout_margin="2sp"
             android:textSize="30sp"
+            android:onClick="on_operator"
             />
 
 
@@ -253,6 +263,7 @@
             android:text="="
             android:layout_margin="2sp"
             android:textSize="40sp"
+
 
             />
 

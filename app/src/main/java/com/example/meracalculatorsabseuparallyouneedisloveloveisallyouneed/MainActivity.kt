@@ -13,9 +13,13 @@ import org.w3c.dom.Text
 class MainActivity : AppCompatActivity() {
     private var tvInput:TextView?=null
 
+    //calculator variable inbound
+    var answer=0.0;
+    var operand1= 0.0;
+    var operand2=0.0;
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        //var answer_box: TextView
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         tvInput = findViewById(R.id.answer_box)
@@ -36,4 +40,15 @@ class MainActivity : AppCompatActivity() {
         tvInput?.text="";
         Toast.makeText(this, "All clear, all lite", Toast.LENGTH_SHORT).show()
     }
+
+    fun on_operator(view: View) {
+
+        when((view as Button).text[0]){
+            '+' -> tvInput?.text = tvInput?.text.toString() + '+'
+            '-' -> tvInput?.text = tvInput?.text.toString() + '-'
+            '*' -> tvInput?.text = tvInput?.text.toString() + '*'
+            '/' -> tvInput?.text = tvInput?.text.toString() + '/'
+        }
+    }
+
 }
