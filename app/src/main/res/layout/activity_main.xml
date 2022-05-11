@@ -263,6 +263,7 @@
             android:text="="
             android:layout_margin="2sp"
             android:textSize="40sp"
+            android:onClick="on_equal"
 
 
             />
