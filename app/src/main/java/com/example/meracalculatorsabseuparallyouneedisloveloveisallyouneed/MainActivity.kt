@@ -17,8 +17,14 @@ class MainActivity : AppCompatActivity() {
 
         //var answer_box: TextView
         super.onCreate(savedInstanceState)
-        tvInput = findViewById(R.id.answer_box)
         setContentView(R.layout.activity_main)
+        tvInput = findViewById(R.id.answer_box)
+        //zindagi me sada sada R.view.id thingy setContentView ke baad likhni hoti he
+        //and private var karke null ki jagah, lateinit bhi kar sakete hain, we do all
+        //this stuff cuz things are in class
+        //fucntion should be outside and not in onCreate cuz the compiler searches for
+        //on_digit inside class, not inside onCreate
+
     }
 
     fun on_digit(view: View) {
