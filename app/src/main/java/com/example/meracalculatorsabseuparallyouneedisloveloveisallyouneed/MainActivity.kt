@@ -14,9 +14,11 @@ class MainActivity : AppCompatActivity() {
     private var tvInput:TextView?=null
 
     //calculator variable inbound
-    var answer: Int=0;
-    var operand1: Int= 0;
-    var operand2: Int=0;
+    var answer: Double=0.0;
+    var operand1= 0.0;
+    var operand2=0.0;
+    var operand1_string= "";
+    var operand2_string= "";
     var operator_entered: Boolean = false
     var ran_first_time: Boolean = true
 
@@ -42,10 +44,10 @@ class MainActivity : AppCompatActivity() {
 
 
         if(!operator_entered){
-            operand1=operand1*10 + Integer.parseInt((view as Button).text as String)
+            operand1_string = operand1_string + ((view as Button).text.toString())
         }
         else{
-            operand2 =operand2*10 + Integer.parseInt((view as Button).text as String)
+            operand2_string += ((view as Button).text.toString())
         }
 
         Toast.makeText(this,"${(view as Button).text} dabaa, hay daabaa", Toast.LENGTH_SHORT).show()
@@ -55,8 +57,10 @@ class MainActivity : AppCompatActivity() {
     fun on_clear(view: View){
         tvInput?.text="";
         Toast.makeText(this, "All clear, all lite", Toast.LENGTH_SHORT).show()
-        operand1 = 0
-        operand2 = 0
+        operand1 = 0.0
+        operand2 = 0.0
+        operand1_string=""
+        operand2_string=""
         operator_entered =false
         operator_mode=' '
 
@@ -64,7 +68,7 @@ class MainActivity : AppCompatActivity() {
 
     fun on_operator(view: View) {
 
-        when((view as Button).text[0]){
+        when((view as Button).text.toString()[0]){
             '+' -> {
                 tvInput?.text = tvInput?.text.toString() + '+'
                 operator_mode='+'
@@ -91,6 +95,9 @@ class MainActivity : AppCompatActivity() {
 
     fun on_equal(view: View){
 
+        operand1= operand1_string.toDouble()
+        operand2= operand2_string.toDouble()
+
         when(operator_mode) {
             '+' -> {
                 answer = operand1 + operand2
@@ -112,11 +119,25 @@ class MainActivity : AppCompatActivity() {
 
         Toast.makeText(this,"$operand1 $operator_mode $operand2 = $answer", Toast.LENGTH_SHORT).show()
 
-        operand1 = 0
-        operand2 = 0
+        operand1 = 0.0
+        operand2 = 0.0
+        operand1_string = ""
+        operand2_string = ""
         operator_entered =false
         operator_mode=' '
     }
 
+    fun on_decimal (view: View){
+        tvInput?.text = tvInput?.text.toString() + (view as Button).text.toString()
+
+        if(!operator_entered){
+            operand1_string = operand1_string + ((view as Button).text.toString())
+        }
+        else{
+            operand2_string += ((view as Button).text.toString())
+        }
+
+        Toast.makeText(this,"${(view as Button).text} dabaa, hay daabaa", Toast.LENGTH_SHORT).show()
+    }
 
 }
