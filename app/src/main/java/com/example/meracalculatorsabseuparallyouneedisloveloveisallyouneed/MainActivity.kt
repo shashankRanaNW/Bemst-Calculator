@@ -8,13 +8,13 @@ import android.widget.Button
 import android.widget.TextView
 import org.w3c.dom.Text
 
-var operator_mode :Char = '-'
+var operator_mode :Char = ' '
 
 class MainActivity : AppCompatActivity() {
     private var tvInput:TextView?=null
 
     //calculator variable inbound
-    var answer=5;
+    var answer=0;
     var operand1= 0;
     var operand2=0;
     var operator_entered = false
@@ -42,15 +42,16 @@ class MainActivity : AppCompatActivity() {
             ran_first_time = false
         }
 
-        Toast.makeText(this,"${(view as Button).text}dabaaaaaaaa, haay dabaaa", Toast.LENGTH_SHORT).show()
-        tvInput?.append((view).text)
 
         if(!operator_entered){
-            operand1*10 + Integer.parseInt((view as Button).text as String)
+            operand1=operand1*10 + Integer.parseInt((view as Button).text as String)
         }
         else{
-            operand2*10 + Integer.parseInt((view as Button).text as String)
+            operand2 =operand2*10 + Integer.parseInt((view as Button).text as String)
         }
+
+        Toast.makeText(this,"$operand1 $operator_mode $operand2 ", Toast.LENGTH_SHORT).show()
+        tvInput?.append((view as Button).text)
     }
 
     fun on_clear(view: View){
@@ -58,6 +59,8 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "All clear, all lite", Toast.LENGTH_SHORT).show()
         operand1 = 0
         operand2 = 0
+        operator_entered =false
+
 
     }
 
@@ -82,9 +85,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        operator_entered=true;
+        Toast.makeText(this,"$operand1 $operator_mode $operand2 = $answer", Toast.LENGTH_SHORT).show()
 
-        operator_entered = false;
+        operator_entered=true;
 
     }
 
@@ -111,6 +114,10 @@ class MainActivity : AppCompatActivity() {
 
         Toast.makeText(this,"$operand1 $operator_mode $operand2 = $answer", Toast.LENGTH_SHORT).show()
 
+        operand1 = 0
+        operand2 = 0
+        operator_entered =false
+        operator_mode=' '
     }
 
 
