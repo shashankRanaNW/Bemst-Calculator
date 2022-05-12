@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
 
     <TextView
         android:id="@+id/answer_box"
@@ -16,6 +18,8 @@
         android:textSize="54sp"
         android:gravity="end|bottom"
         android:text="1 2 ka 4, 4 2 ka 1"
+        android:textColor="#0000ff"
+
         />
 
     <LinearLayout
@@ -35,6 +39,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_digit"
+            android:textColor="@color/white"
 
 
             />
@@ -49,6 +54,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_digit"
+            android:textColor="@color/white"
             />
 
         <Button
@@ -61,6 +67,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_digit"
+            android:textColor="@color/white"
             />
 
         <Button
@@ -73,6 +80,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_operator"
+            android:textColor="@color/white"
 
             />
 
@@ -97,6 +105,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_digit"
+            android:textColor="@color/white"
 
             />
 
@@ -110,6 +119,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_digit"
+            android:textColor="@color/white"
 
             />
 
@@ -123,6 +133,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_digit"
+            android:textColor="@color/white"
             />
 
         <Button
@@ -135,6 +146,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_operator"
+            android:textColor="@color/white"
 
             />
 
@@ -157,6 +169,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_digit"
+            android:textColor="@color/white"
 
             />
 
@@ -170,6 +183,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_digit"
+            android:textColor="@color/white"
             />
 
         <Button
@@ -182,6 +196,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_digit"
+            android:textColor="@color/white"
 
             />
 
@@ -195,7 +210,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_operator"
-
+            android:textColor="@color/white"
             />
 
 
@@ -218,6 +233,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_digit"
+            android:textColor="@color/white"
 
             />
 
@@ -234,6 +250,7 @@
             android:layout_margin="2sp"
             android:textSize="30sp"
             android:onClick="on_operator"
+            android:textColor="@color/white"
             />
 
 
@@ -256,6 +273,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_equal"
+            android:textColor="@color/white"
 
 
             />
@@ -271,6 +289,7 @@
             android:layout_margin="2sp"
             android:textSize="40sp"
             android:onClick="on_clear"
+            android:textColor="@color/white"
 
             />
 

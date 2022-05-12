@@ -14,12 +14,10 @@ class MainActivity : AppCompatActivity() {
     private var tvInput:TextView?=null
 
     //calculator variable inbound
-    var answer=0;
-    var operand1= 0;
-    var operand2=0;
-    var operator_entered = false
-
-
+    var answer: Int=0;
+    var operand1: Int= 0;
+    var operand2: Int=0;
+    var operator_entered: Boolean = false
     var ran_first_time: Boolean = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             operand2 =operand2*10 + Integer.parseInt((view as Button).text as String)
         }
 
-        Toast.makeText(this,"$operand1 $operator_mode $operand2 ", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,"${(view as Button).text} dabaa, hay daabaa", Toast.LENGTH_SHORT).show()
         tvInput?.append((view as Button).text)
     }
 
@@ -60,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         operand1 = 0
         operand2 = 0
         operator_entered =false
-
+        operator_mode=' '
 
     }
 
@@ -85,7 +83,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        Toast.makeText(this,"$operand1 $operator_mode $operand2 = $answer", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,"${(view as Button).text}", Toast.LENGTH_SHORT).show()
 
         operator_entered=true;
 
